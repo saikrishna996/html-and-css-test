@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Links</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--question 1-->
+<style>
+    
+a {
+    color: blue;
+    text-decoration: none; 
+    padding: 5px;
+    font-size: 16px;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: 3px;
+}
+p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+.card {
+    width:300px;
+    border:1px solid gray;
+    padding:20px;
+    margin: 10px;
+}
+
+
+button {
+    background-color: blue;
+    color: white;           
+    border: none;           
+    padding: 10px 20px;      
+    font-size: 16px;         
+    cursor: pointer;        
+    border-radius: 5px;      
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: darkblue; 
+}
+
+
+.hover-button {
+    width: 150px;
+    height: 50px;
+    background-color: #4CAF50; 
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+}
+
+
+.hover-button:hover {
+    transform: scale(1.2); 
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    position: relative;
+    animation: slide 2s ease-in-out infinite;
+}
+
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 300px;
+    }
+}
+
+
+:root {
+            --main-color: #af4c54; 
+        }
+
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header, main {
+            padding: 20px;
+            color: white;
+        }
+
+        header {
+            background-color: var(--main-color);
+        }
+
+        main {
+            background-color: var(--main-color);
+        }
+
+        
+        @media (max-width: 768px) {
+            :root {
+                --main-color: #FF5722; 
+            }
+        }
+
+
+    
+</style>
+<body>
+    <!--question1-->
+
+    <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+    </ul> <br><br>
+    <!--question2-->
+
+
+    <h1>Welcome to My Simple Webpage</h1>
+    <p>This is a sample paragraph of text. It serves as an example of how to structure a simple webpage using HTML and CSS. You can add more content here as needed to provide information or insights to your readers.</p>
+    <br><br>
+
+    <!--question3-->
+
+<div class="card">
+    <P>create a card with a boarder,padding and margin</P>
+
+</div>
+<br><br>
+
+<!--question6-->
+<button>Click Me</button>
+<br><br>
+
+<!--question7-->
+<button class="hover-button">Hover Me</button>
+<br><br>
+
+<!--question8-->
+<div class="box"></div>
+<br><br>
+
+<!--question10-->
+<header>
+    <h1>Welcome to My Webpage</h1>
+</header>
+
+<main>
+    <p>This is the main content of the webpage. Resize the window to see the background color change!</p>
+</main>
+
+
+</body>
+</html>
